@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homan joneid</title>
     <link rel="stylesheet" href="index.css">
+            <div class="icon-menu">
+                <img class="icon-menu" src="https://s2.uupload.ir/files/icon-menu_gxkp.png" alt="">
+            </div>
+             <div id="containerr">
+                <ul>
+                    <li><a href="">درباره من</a></li>
+                    <li><a href="">تجربیات</a></li>
+                    <li><a href="">استادانم</a></li>
+                    <li><a href="">مسیر راه</a></li>
+                    <li><a href="#">ارتباط با ما</a></li>
+               </ul>
+            </div>
+
+           
+
+    
 </head>
 <body>
     <u class="underline">
@@ -116,6 +132,48 @@
         <p>
             کلیه حقوق برای وبسایت هومن محفوظ می باشد©
         </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <style>
                 
 @media screen and (max-width:425px){
@@ -244,13 +302,106 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                .mybutton:hover{
                 background-color:#4287BF;
                }
-               
+                            
+
+
+
+
+                .icon-menu{
+                    width: 40px;
+                    margin-left: 185px;
+                    
+                }
+
+
+#containerr{
+font-size:22px;
+width:150px;
+border-radius: 15px;
+margin-top: 3px;
+margin-left: 260px;
+position: absolute;
+z-index: 1;
+right: -150px;
+display: none;
+text-align: center;
+}
+#containerr ul{
+margin:0px;
+padding:0px;
+background-color:#1d1c1cea;
+border-radius: 5px;
+
+}
+
+
+#containerr li{
+list-style:none;
+padding:0px;
+background-color:#1d1c1cea;
+border-bottom:gold solid;
+border-width:2px;
+border-radius: 5px;
+
+
+}
+
+
+#containerr a{
+text-decoration:none;
+color:white;
+display:block;
+height:65px;
+line-height:65px;
+text-indent:-10px;
+width:100%;
+border-radius: 15px;
+}
+
+      .back-containerr{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.486);
+      }  
 
             
 
 }
 
         </style>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous">
+</script>
+
+<script>
+$(document).ready(function(){
+    $('.icon-menu img').click(function(){
+        var responsiveMenu = $('#containerr');
+        responsiveMenu.show();
+        responsiveMenu.animate({
+            right: '0px'
+        },400);
+        $('body').append('<div class="back-containerr"></div>');
+        $('.back-containerr').click(function(){
+            var responsiveMenu = $('#containerr');
+            responsiveMenu.animate({
+            right: '-150px'
+        },400,function(){
+           responsiveMenu.hide();
+        });
+        $(this).remove();
+        })
+    })
+})
+</script>
 
 </body>
 </html>
