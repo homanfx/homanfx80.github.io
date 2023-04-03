@@ -7,7 +7,7 @@
     <title>Homan Joneid</title>
     <link rel="stylesheet" href="pih.css">
     <ul>
-        <li><a href="#">ارتباط با ما</a></li>
+        <li><a href="#Contact Us">ارتباط با ما</a></li>
         <li><a href="#bitcoin">بیت کوین</a></li>
         <li><a href="#ramzarz">رمز ارز ها</a></li>
         <li><a href="#blockchain"> بلاک چین </a></li>
@@ -55,113 +55,225 @@
             </p>
         </section>
         <br>
+        <section id="Contact Us">
+        <h2>فرم ارتباط با ما</h2>
+        <form dir="rtl">
+            <p>
+            <input class="input-btn2" type="text" name="name" id="name" placeholder="مهدی احدی" />
+            <label for="name">نام</label>
+            </p>
+            <p>
+                <input class="input-btn3" type="text" name="email" id="email" placeholder="mail@example.ir" />
+                <label for="email">ایمیل</label>
+                </p>
+
+<p>
+    <textarea name="text" placeholder="متن خود را بنویسید. "></textarea>
+    </p>
+    <p>
+        <button class="button button4" type="button" onclick="alert('پیام شما با موفقیت ارسال شد')">ارسال</button>
+        </p>
+    </form>
+</section>
+        <br>
+        <br>
         <footer class="pasafhe">
             <p>
                 کلیه حقوق برای وبسایت هومن محفوظ می باشد©
             </p>
 <style>
-    @media screen and (max-width:425px){
-/* این بخش کل بادی سایت است */
-body{
-    background-image: url(https://s2.uupload.ir/files/backmobile_v9sa.jpeg);
-}
-/* منو سایت */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #ae7af7;
-    border-radius: 5px;
-    border: 2px solid gold;
+  @media screen and (max-width:425px){
+    /* این بخش کل بادی سایت است */
+    body{
+        background-image: url(https://s2.uupload.ir/files/backmobile_v9sa.jpeg);
+    }
+    /* منو سایت */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        overflow: hidden;
+        background-color: #ae7af7;
+        border-radius: 5px;
+        border: 2px solid gold;
+        }
+        
+        li {
+        float: left;
+        }
+        li a {
+        display: grid;
+        color: white;
+        text-align: center;
+        padding: 10px 7.5px;
+        text-decoration: none;
+        font-family:'IRLotus';
+        font-size:20px;
+        margin-left: 25px;
+        }
+        li a:hover {
+        background-color: gold;
+        border-radius: 5px;
+        }
+     /* تکست معرفی سایت */
+     .moarefi{
+        width: auto;
+        height: auto;
+        display: grid;
+        background-color: #ffffffa9;
+        color: rgb(0, 0, 0);
+        text-align:  center;
+        font-family: 'IRKamran Regular';
+        font-size: 30px;
+        border-radius: 8px;
+        border: 3px solid purple;
+    }
+    /* تکست قسمت بلاک چین سایت */
+    .textblokchain{
+        width: auto;
+        height: auto;
+        display: grid;
+        background-color: #ab77f3;
+        color: rgb(102, 255, 0);
+        text-align: right;
+        font-family: 'IRKamran Regular';
+        font-size: 25px;
+        border-radius: 8px;
+        border: 3px solid purple;
+    }
+    /* تکست قسمت رمز ارز ها */
+    .textramzarz{
+        width: auto;
+        height: auto;
+        display: grid;
+        background-color: #222121;
+        color: #fff;
+        text-align: right;
+        font-family: 'IRKamran Regular';
+        font-size: 25px;
+        border-radius: 8px;
+        border: 3px solid purple;
+    }
+    /* تکست قسمت بیت کوین */
+    .textbitcoin{
+        width: auto;
+        height: auto;
+        display: grid;
+        background-color: #7df3b2;
+        color: #000000;
+        text-align: right;
+        font-family: 'IRKamran Regular';
+        font-size: 25px;
+        border-radius: 8px;
+        border: 3px solid rgb(0, 228, 38);
     }
     
-    li {
-    float: left;
+    /* پا صفحه سایت */
+    .pasafhe{
+        text-align: center;
+        font-family: 'IRMitra';
+        background-color: rgb(61, 10, 10);
+        color: rgb(252, 163, 163);
+        padding: 7px;
+        text-align: center;
+        border: 3px solid rgb(0, 238, 255);
+        border-radius: 15px;
+        font-family:'IRDast Nevis Regular';
+        font-size: 20px;
+        display: grid;
     }
-    li a {
-    display: grid;
-    color: white;
-    text-align: center;
-    padding: 10px 7.5px;
-    text-decoration: none;
-    font-family:'IRLotus';
-    font-size:19px;
 
+
+
+
+body{
+    display: grid;
+}
+    /*====== h2 خاصیت ====== */
+    h2 {
+    margin-bottom: 5px;
+    color: #474E69;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    display: grid;
     }
-    li a:hover {
-    background-color: gold;
+    
+    /* ===========================
+    ====== فرم ارتباط =======
+    =========================== */
+    
+    input, textarea {
+    padding: 10px;
+    border: 3px solid #25fc7f;
     border-radius: 5px;
+    width: 382px;
+    color: #999999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    display: grid;
     }
- /* تکست معرفی سایت */
- .moarefi{
-    width: auto;
-    height: auto;
+    
+    /*====== textarea خاصیت ====== */
+    textarea {
+    width: 382px;
+    height: 150px;
+    border: 3px solid #25fc7f;
+    font-size: 19px;
     display: grid;
-    background-color: #ffffffa9;
-    color: rgb(0, 0, 0);
-    text-align:  center;
-    font-family: 'IRKamran Regular';
-    font-size: 30px;
-    border-radius: 8px;
-    border: 3px solid purple;
-}
-/* تکست قسمت بلاک چین سایت */
-.textblokchain{
-    width: auto;
-    height: auto;
+    }
+    
+    /*====== label خاصیت ====== */
+    .form label {
+    margin-left: 10px;
+    color: #999999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid #25fc7f;
+    font-size: 19px;
     display: grid;
-    background-color: #ab77f3;
-    color: rgb(102, 255, 0);
-    text-align: right;
-    font-family: 'IRKamran Regular';
-    font-size: 25px;
-    border-radius: 8px;
-    border: 3px solid purple;
-}
-/* تکست قسمت رمز ارز ها */
-.textramzarz{
-    width: auto;
-    height: auto;
-    display: grid;
-    background-color: #222121;
-    color: #fff;
-    text-align: right;
-    font-family: 'IRKamran Regular';
-    font-size: 25px;
-    border-radius: 8px;
-    border: 3px solid purple;
-}
-/* تکست قسمت بیت کوین */
-.textbitcoin{
-    width: auto;
-    height: auto;
-    display: grid;
-    background-color: #7df3b2;
-    color: #000000;
-    text-align: right;
-    font-family: 'IRKamran Regular';
-    font-size: 25px;
-    border-radius: 8px;
-    border: 3px solid rgb(0, 228, 38);
-}
-
-/* پا صفحه سایت */
-.pasafhe{
-    text-align: center;
-    font-family: 'IRMitra';
-    background-color: rgb(61, 10, 10);
-    color: rgb(252, 163, 163);
-    padding: 7px;
-    text-align: center;
-    border: 3px solid rgb(0, 238, 255);
-    border-radius: 15px;
-    font-family:'IRDast Nevis Regular';
-    font-size: 20px;
-    display: grid;
-}
+    }
+  
+    .input-btn2{
+        border-radius: 20px;
+        font-size: 19px;
+        display: grid;
+    }
+    .input-btn3{
+        border-radius: 20px;
+        font-size: 19px;
+        display: grid;
+    }
 
 
+/* تماس با ما */
+    .button {
+        background-color: rgb(154, 144, 243);
+/* Green */
+        width: 400px;
+        border: none;
+        background-color: rgb(154, 144, 243);
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+
+
+    .button4 {
+        background-color: rgb(154, 144, 243);
+        color: black;
+        border: 3px solid #25fc7f;
+        border-radius: 15px;
+        font-size: 17px;
+      }
+      
+      .button4:hover {        background-color: rgb(95, 190, 58);
+      }
 }
 
 </style>
