@@ -78,7 +78,8 @@
     <textarea name="text" placeholder="متن خود را بنویسید "></textarea>
     </p>
     <p>
-        <button class="button button4" type="button" onclick="alert('پیام شما با موفقیت ارسال شد')">ارسال</button>
+        <button class="button button4" type="button" onclick="alert('پیام شما با موفقیت ارسال شد')">ارسال
+        </button>
         </p>
     </form>
 </section>
@@ -89,8 +90,9 @@
             <p>
                 کلیه حقوق برای وبسایت هومن محفوظ می باشد©
             </p>
+
 <style>
- @media screen and (max-width:425px){
+@media screen and (max-width:425px){
     /* این بخش کل بادی سایت است */
     body{
         background-image: url(https://s2.uupload.ir/files/backmobile_v9sa.jpeg);
@@ -225,7 +227,7 @@ body{
     
     /*====== textarea خاصیت ====== */
     textarea {
-    width: 362px;
+    max-width: 362px;
     height: 150px;
     border: 3px solid #87a6e9;
     font-size: 19px;
@@ -287,10 +289,14 @@ body{
         border: 3px solid #25fc7f;
         border-radius: 15px;
         font-size: 17px;
+        text-decoration: none;
       }
       
       .button4:hover {        background-color: rgb(95, 190, 58);
       }
+
+
+
     
 /* جدول ارتباط با ما */
 .table-Contact-Us{
