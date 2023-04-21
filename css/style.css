@@ -2217,7 +2217,7 @@ button,
   background-color: #FF6382;
   border-radius: 4px;
   border: 0;
-  color: !important;
+  color: important;
   cursor: pointer;
   display: inline-block;
   font-weight: 200;
@@ -2327,7 +2327,7 @@ input[type="button"].special,
 button.special,
 .button.special {
   background-color: #FF6382;
-  color: !important;
+  color: important;
 }
 
 input[type="submit"].special:hover,
@@ -2465,6 +2465,7 @@ button:disabled,
 }
 
 @media screen and (max-width: 480px) {
+  
 
   .thumbnails {
     display: block;
@@ -2615,3 +2616,23 @@ body.is-covered #wrapper {
 
 }
 
+/* clock */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+#digital-clock {
+  
+background-color: #222121;
+color: aqua;
+width: 200px;
+height: auto;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left: 1140px;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 20px;
+text-align: center;
+box-shadow: 0 10px 10px 0 rgba(255, 235, 235, 0.2), 0 10px 20px 0 rgba(255, 234, 234, 0.19);
+border-radius: 10px;
+border: 2px solid #85e0f7;
+display: block;
+direction: ltr;
+} 
