@@ -207,3 +207,26 @@ body{
     transform: scale(0.5);
     margin-bottom: 20px;
 }
+
+/* button  resume*/
+.btn{
+    padding: 15px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid gold;
+    background-color: #222121;
+    color: #85e0f7;
+    background-image: linear-gradient(40deg, #0fcff1 40% , transparent 60%);
+    background-position: 100%;
+    background-size: 320%;
+    transition: all 1s;
+    border-radius: 6px;
+    margin-left: 850px;
+    margin-top: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn:hover{
+    color: #222121;
+    background-position: 0;
+}
