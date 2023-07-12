@@ -54,7 +54,6 @@ hr {
  body{
         display: grid;
 }
-/* 
  .content{
         display: none;
     }
@@ -80,7 +79,7 @@ hr {
     }
     @keyframes loading {
         100% {inset: 0;}
-    } */
+    }
 /*     
     .loading{
         width: 90px;
